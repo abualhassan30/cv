@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Poppins:wght@200;400;600;900&display=swap');
+
+/* Common styles for all screen sizes */
+body {
+    background-image: url(/images/Mystery.png);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.page {
+    background-color: rgba(240, 248, 255, 0.85);
+    max-width: 80%;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Add 40px space above the page */
+    margin-bottom: 40px; /* Add 40px space below the page */
+}
+
+header .about-me, header .my-name {
+    background: linear-gradient(to right, #335285, #5a74a1, #3f5c8f);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+}
+
+header .my-name span {
+    font-size: 3rem;
+    color: #FF5733      ;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff5833e8;
+    margin-top: -5px;
+}
+
+p {
+    color: #575858;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;}
+
+footer .info-cv {
+    border-top: 1px #fcfcfc3b solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.cv-download{
+    display: flex;
+    flex-direction: column;
+}
+.cv-download a {
+    text-decoration: none;
+    color: #335285;
+    margin: 10px 0 10px 0;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #FF5733;
+}
+.info h4{
+    background: linear-gradient(to right, #335285, #5a74a1, #3f5c8f);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 400;
+    text-align: left;
+}
+.arabic-link {
+    font-family: 'Cairo', sans-serif;
+}
+
+.cv-download a:hover {
+    background-color: #FF5733;
+    color: #FFFFFF;
+}
+
+.copyright {
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    color: #888888; /* Set a color (e.g., a muted gray) */
+    text-align: center; /* Center the text if needed */
+    margin-top: 20px; /* Add top margin for spacing */
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    /* Adjustments for screens up to 768px wide */
+    .page {
+        max-width: 90%;
+        padding: 20px;
+        margin-top: 80px; /* Increase margin above the page to 80px */
+        margin-bottom: 80px; /* Increase margin below the page to 80px */
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+   .rounded-full{
+    width: 60px;
+   }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for screens up to 480px wide (e.g., mobile devices) */
+    .page {
+        padding: 10px;
+        margin-top: 80px; /* Increase margin above the page to 80px */
+        margin-bottom: 80px; /* Increase margin below the page to 80px */
+    }
+
+    h1.about-me {
+        font-size: 1.2rem;
+    }
+
+    h1.my-name {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .info-cv{
+        flex-direction: column;
+        padding: 20px;
+    } 
+    .page {
+        margin: 10px;
+    }
+    header .about-me, header .my-name {
+        font-weight: 700;
+    }
+
+    header .my-name span {
+        font-size: 1.4rem;
+    }
+}
